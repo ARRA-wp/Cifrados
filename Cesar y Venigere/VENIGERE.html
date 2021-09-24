@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cifrado Vegginere</title>
+  <script src="js/vegginere.js"></script>
+  <link rel="stylesheet" href="Css/cifrados.css">
+</head>
+
+<body background="img/fondo.png">
+  <center>
+    <FONT color="#FBB833">
+      <center>
+        <p>
+        <h1>Cifrado Veginere</h1>
+        </p>
+      </center>
+
+      <header>
+        <nav>
+          <h3>
+            <center>
+              El cifrado Vigenère es un cifrado basado en diferentes series de caracteres o letras del cifrado César
+              formando estos caracteres una tabla, llamada tabla de Vigenère, que se usa como clave. El cifrado de
+              Vigenère es un cifrado polialfabético y de sustitución.
+
+              El cifrado Vigenère se ha reinventado muchas veces. El método original fue descrito por Giovan Batista
+              Belaso en su libro de 1553 "La cifra del Sig. Giovan Batista Belaso", quien construyó el cifrado basándose
+              en la tabula recta de Trithemius, pero añadió una clave repetida para cambiar cada carácter entre los
+              diferentes alfabetos. Sin embargo, fue incorrectamente atribuido en el siglo XIX a Blaise de Vigenère, a
+              partir de un trabajo realizado en 1583, y por ello aún se le conoce como el "cifrado Vigenère".
+            </center>
+          </h3>
+          <br>
+          <div class="inicio">
+            <div class="links">
+              <a href="index.html" style="color:#FBB833" ;> Inicio </a>
+              <a href="CESAR.html" style="color:#FBB833" ;> Cesar </a>
+              <a href="VENIGERE.html" class="active" style="color:#FBB833" ;> Vegginere </a>
+            </div>
+          </div>
+        </nav>
+      </header>
+
+      <div name="div-encriptar">
+        <form class="formVigenere">
+          <span class="h1v">Frase a Encriptar o Desencriptar:</span>
+          <br>
+          <textarea class="textareaV" id="InputText" rows="5"></textarea>
+          <br>
+          <br>
+          <span class="h1v">Contraseña</span>
+          <br>
+          <br>
+          <input class="TextV" id="PassWord" type="text" />
+          <br>
+          <br>
+          <input class="ButtonV" id="Encrypt" onclick="RebuildString(Encriptar(true))" type="button"
+            value="Encriptar" />
+          <input class="ButtonV" id="UnEncrypt" onclick="RebuildString(Encriptar(false))" type="button"
+            value="Desencriptar" />
+          <br>
+          <br>
+          <span class="h1v">Resultado</span>
+          <br>
+          <br>
+          <textarea class="textareaV" id="Result" rows="5"></textarea>
+        </form>
+        <br>
+        <br>
+      </div>
+    </FONT>
+
+    <FONT color="#FBB833">
+      <footer>
+        <ul>
+          <li>Ramirez Alvarez Andres Rafael</li>
+          <li>Seguridad y Aplicaciones Web</li>
+          <li>5IV8</li>
+        </ul>
+      </footer>
+    </FONT>
+  </center>
+
+</body>
+
+</html>
